@@ -567,6 +567,7 @@ body {
 .page-last {
    background: #000000;
    display: flex;
+   height: 70px;
 }
 .page-last .logo {
    justify-content: left;
