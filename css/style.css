@@ -434,10 +434,13 @@ body {
 .page-4 {
 	background-color: black;
     height: 100vh;
+    position: relative;
 }
 .page-4 .contents {
 	width: 88.5%;
 	margin: auto;
+	position: relative;
+	z-index: 1;
 }
 .page-4 .contents .content-header {
 	display: flex;
@@ -456,14 +459,15 @@ body {
     text-transform: uppercase;
     color: #FFFFFF;
     text-shadow: 0px 0px 24px rgba(143, 255, 0, 0.42);
+    margin-bottom: 0px;
 }
 .page-4 .contents .content-block {
-	margin-top: 76px;
 	display: flex;
 }
 .page-4 .contents .content-block .block {
 	display: flex;
     width: 100%;
+    justify-content: center;
 }
 .page-4 .contents .content-block .block .left {
 	padding: 0px 25px;
@@ -481,6 +485,7 @@ body {
 }
 .page-4 .contents .content-block .block .right .small-text {
 	margin-top: auto;
+	margin-bottom: 0px;
 }
 .page-4 .contents .content-block .block .right .small-text li {
 	font-family: 'Roboto';
@@ -490,7 +495,67 @@ body {
     line-height: 160%;
     color: #FFFFFF;
 }
-
+.page-4 .contents .content-text {
+	margin-top: 12px;
+	position: relative;
+}
+.page-4 .contents .content-text .up-arrows {
+    display: flex;
+    width: 100%;
+}
+.page-4 .contents .content-text .up-arrows .arrow {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+.page-4 .contents .content-text .center-text {
+	display: flex;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    bottom: 25px;
+}
+.page-4 .contents .content-text .center-text .text {
+    font-family: 'TekoBold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 143px;
+    line-height: 90%;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 24px rgba(255, 255, 255, 0.42);
+    margin: 0px;
+}
+.page-4 .contents .content-text .center-text .text span {
+	color: #D3FF81;
+	z-index: 1;
+}
+.page-4 .contents .content-text .center-text .bit {
+	position: absolute;
+    top: 70px;
+}
+.page-4 .contents .content-text .down-arrows {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: 150px;
+}
+.page-4 .contents .content-text .down-arrows .arrow {
+	display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.page-4 .pic {
+	position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
 
 
 
